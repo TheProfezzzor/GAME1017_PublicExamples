@@ -9,7 +9,7 @@ void TextureManager::Init()
 		std::cout << "Image init success!" << std::endl;
 	else // is 0.
 		std::cout << "Image init failed: ERROR - " << IMG_GetError() << std::endl;
-	SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "2");
+	SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "0");
 }
 
 void TextureManager::Load(const char* path, const std::string key)
